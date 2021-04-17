@@ -9,10 +9,10 @@ public class Conexion {
 
 	   //  Database credentials
 	   static final String USER = "root";
-	   static final String PASS = "R.delgado7";
+	   static final String PASS = "";
 	
     private static Connection conn = null;
-    //patrón singleton, instancia única
+    //patrï¿½n singleton, instancia ï¿½nica
     private Conexion () throws ClassNotFoundException {
         try {
 
@@ -49,7 +49,7 @@ public class Conexion {
         if (conn != null) {
             try {
                 conn.close();
-                System.out.println("Cerrando la conexión");
+                System.out.println("Cerrando la conexiï¿½n");
             } catch (SQLException e) {
                 e.printStackTrace();
             }

@@ -1,6 +1,7 @@
 package modelo;
 
-import java.util.Date;
+import java.time.LocalDate;
+
 
 public class Vehiculo {
 	
@@ -9,12 +10,12 @@ public class Vehiculo {
 	private String marca;
 	private String modelo;
 	private String color;
-	private Date fechaDeAlta;
+	private LocalDate fechaDeAlta;
 	private double kilometros; //esto ira variando según
 	private Categoria categoria;
 	private Oficina ubicacionDeLaOficina;
 	
-	public Vehiculo(String matricula, String marca, String modelo, String color, Date fechaDeAlta, double kilometros,
+	public Vehiculo(String matricula, String marca, String modelo, String color, LocalDate fechaDeAlta, double kilometros,
 			Categoria categoria,Oficina ubicacionDeLaOficina) {
 		super();
 		this.matricula = matricula;
@@ -68,11 +69,11 @@ public class Vehiculo {
 		this.color = color;
 	}
 
-	public Date getFechaDeAlta() {
+	public LocalDate getFechaDeAlta() {
 		return fechaDeAlta;
 	}
 
-	public void setFechaDeAlta(Date fechaDeAlta) {
+	public void setFechaDeAlta(LocalDate fechaDeAlta) {
 		this.fechaDeAlta = fechaDeAlta;
 	}
 

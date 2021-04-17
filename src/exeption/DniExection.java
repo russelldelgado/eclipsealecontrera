@@ -5,4 +5,6 @@ public class DniExection  extends Exception{
      public String getMessage() {
          return "Lo sentimos su DNI no cumple con las caracteristicas especificadas";
      }
+
+     
 }

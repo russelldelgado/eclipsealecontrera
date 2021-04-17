@@ -1,12 +1,12 @@
 package modelo;
 
-import java.util.Date;
+import java.time.LocalDate;
 
 public class CocheElectrico extends Vehiculo{
 
 	int autonomia;
 	int tiempoDeRecarga;
-	public CocheElectrico(String matricula, String marca, String modelo, String color, Date fechaDeAlta,
+	public CocheElectrico(String matricula, String marca, String modelo, String color, LocalDate fechaDeAlta,
 			double kilometros, Categoria categoria,Oficina ubicacionDeLaOficina, int autonomia, int tiempoDeRecarga) {
 		super(matricula, marca, modelo, color, fechaDeAlta, kilometros,categoria ,ubicacionDeLaOficina);
 		this.autonomia = autonomia;

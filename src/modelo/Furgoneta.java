@@ -1,6 +1,6 @@
 package modelo;
 
-import java.util.Date;
+import java.time.LocalDate;
 
 import modelo.TiposEnum.NivelEmision;
 import modelo.TiposEnum.TipoFurgonetaCarnet;
@@ -9,7 +9,7 @@ public class Furgoneta extends CocheCombustible {
     double capacidadCarga;
 	TipoFurgonetaCarnet tipoFurgonetaCarnet;
 
-	public Furgoneta(String matricula, String marca, String modelo, String color, Date fechaDeAlta, double kilometros,
+	public Furgoneta(String matricula, String marca, String modelo, String color, LocalDate fechaDeAlta, double kilometros,
             Categoria categoria, Oficina ubicacionDeLaOficina, double consumo, int potencia,
             NivelEmision nivelEmision , double capacidadCarga , TipoFurgonetaCarnet tipoFurgonetaCarnet){
                 super(matricula, marca, modelo, color, fechaDeAlta, kilometros, categoria, ubicacionDeLaOficina, consumo, potencia,

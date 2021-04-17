@@ -1,22 +1,24 @@
 package modelo;
 
-import java.util.Date;
+import java.time.LocalDate;
 
 import modelo.TiposEnum.CarneMoto;
 import modelo.TiposEnum.NivelEmision;
 
 public class Moto extends CocheCombustible {
 
-	public Moto(String matricula, String marca, String modelo, String color, Date fechaDeAlta, double kilometros,
+	int cilindrada;
+	CarneMoto carne;
+
+	public Moto(String matricula, String marca, String modelo, String color, LocalDate fechaDeAlta, double kilometros,
 			Categoria categoria, Oficina ubicacionDeLaOficina, double consumo, int potencia,
 			NivelEmision nivelEmision , int cilindrada , CarneMoto carneMoto) {
 		super(matricula, marca, modelo, color, fechaDeAlta, kilometros, categoria, ubicacionDeLaOficina, consumo, potencia,
 				nivelEmision);
 				this.cilindrada = cilindrada;
-				this.carne = carne;
+				this.carne = carneMoto;
 	}
-	int cilindrada;
-	CarneMoto carne;
+	
 	
 	@Override
 	public String toString() {

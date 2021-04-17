@@ -1,6 +1,6 @@
 package modelo;
 
-import java.util.Date;
+import java.time.LocalDate;
 
 import modelo.TiposEnum.NivelEmision;
 
@@ -10,7 +10,7 @@ public class CocheCombustible extends Vehiculo{
 	int potencia;
 	NivelEmision nivelEmision;
 	
-	public CocheCombustible(String matricula, String marca, String modelo, String color, Date fechaDeAlta,
+	public CocheCombustible(String matricula, String marca, String modelo, String color, LocalDate fechaDeAlta,
 			double kilometros, Categoria categoria , Oficina ubicacionDeLaOficina, double consumo, int potencia, NivelEmision nivelEmision) {
 		super(matricula, marca, modelo, color, fechaDeAlta, kilometros,categoria , ubicacionDeLaOficina);
 		this.consumo = consumo;
