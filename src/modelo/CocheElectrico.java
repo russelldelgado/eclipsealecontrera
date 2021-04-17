@@ -4,11 +4,11 @@ import java.util.Date;
 
 public class CocheElectrico extends Vehiculo{
 
-	double autonomia;
-	double tiempoDeRecarga;
+	int autonomia;
+	int tiempoDeRecarga;
 	public CocheElectrico(String matricula, String marca, String modelo, String color, Date fechaDeAlta,
-			double kilometros, String ubicacionDeLaOficina, double autonomia, double tiempoDeRecarga) {
-		super(matricula, marca, modelo, color, fechaDeAlta, kilometros, ubicacionDeLaOficina);
+			double kilometros, Categoria categoria,Oficina ubicacionDeLaOficina, int autonomia, int tiempoDeRecarga) {
+		super(matricula, marca, modelo, color, fechaDeAlta, kilometros,categoria ,ubicacionDeLaOficina);
 		this.autonomia = autonomia;
 		this.tiempoDeRecarga = tiempoDeRecarga;
 	}
@@ -16,16 +16,16 @@ public class CocheElectrico extends Vehiculo{
 	public String toString() {
 		return "CocheElectrico [autonomia=" + autonomia + ", tiempoDeRecarga=" + tiempoDeRecarga + "]";
 	}
-	public double getAutonomia() {
+	public int getAutonomia() {
 		return autonomia;
 	}
-	public void setAutonomia(double autonomia) {
+	public void setAutonomia(int autonomia) {
 		this.autonomia = autonomia;
 	}
-	public double getTiempoDeRecarga() {
+	public int getTiempoDeRecarga() {
 		return tiempoDeRecarga;
 	}
-	public void setTiempoDeRecarga(double tiempoDeRecarga) {
+	public void setTiempoDeRecarga(int tiempoDeRecarga) {
 		this.tiempoDeRecarga = tiempoDeRecarga;
 	}
 	

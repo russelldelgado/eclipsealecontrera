@@ -10,11 +10,12 @@ public class Vehiculo {
 	private String modelo;
 	private String color;
 	private Date fechaDeAlta;
-	private double kilometros;
-	private String ubicacionDeLaOficina;
+	private double kilometros; //esto ira variando según
+	private Categoria categoria;
+	private Oficina ubicacionDeLaOficina;
 	
 	public Vehiculo(String matricula, String marca, String modelo, String color, Date fechaDeAlta, double kilometros,
-			String ubicacionDeLaOficina) {
+			Categoria categoria,Oficina ubicacionDeLaOficina) {
 		super();
 		this.matricula = matricula;
 		this.marca = marca;
@@ -22,8 +23,11 @@ public class Vehiculo {
 		this.color = color;
 		this.fechaDeAlta = fechaDeAlta;
 		this.kilometros = kilometros;
+		this.setCategoria(categoria);
 		this.ubicacionDeLaOficina = ubicacionDeLaOficina;
 	}
+
+
 
 	@Override
 	public String toString() {
@@ -80,13 +84,23 @@ public class Vehiculo {
 		this.kilometros = kilometros;
 	}
 
-	public String getUbicacionDeLaOficina() {
+	public Categoria getCategoria() {
+		return categoria;
+	}
+
+	public void setCategoria(Categoria categoria) {
+		this.categoria = categoria;
+	}
+
+	public Oficina getUbicacionDeLaOficina() {
 		return ubicacionDeLaOficina;
 	}
 
-	public void setUbicacionDeLaOficina(String ubicacionDeLaOficina) {
+	public void setUbicacionDeLaOficina(Oficina ubicacionDeLaOficina) {
 		this.ubicacionDeLaOficina = ubicacionDeLaOficina;
 	}
+
+	
 	
 
 }

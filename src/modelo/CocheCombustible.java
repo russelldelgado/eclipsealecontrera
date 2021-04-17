@@ -2,15 +2,17 @@ package modelo;
 
 import java.util.Date;
 
+import modelo.TiposEnum.NivelEmision;
+
 public class CocheCombustible extends Vehiculo{
 
 	double consumo;
-	double potencia;
-	String nivelEmision;
+	int potencia;
+	NivelEmision nivelEmision;
 	
 	public CocheCombustible(String matricula, String marca, String modelo, String color, Date fechaDeAlta,
-			double kilometros, String ubicacionDeLaOficina, double consumo, double potencia, String nivelEmision) {
-		super(matricula, marca, modelo, color, fechaDeAlta, kilometros, ubicacionDeLaOficina);
+			double kilometros, Categoria categoria , Oficina ubicacionDeLaOficina, double consumo, int potencia, NivelEmision nivelEmision) {
+		super(matricula, marca, modelo, color, fechaDeAlta, kilometros,categoria , ubicacionDeLaOficina);
 		this.consumo = consumo;
 		this.potencia = potencia;
 		this.nivelEmision = nivelEmision;
@@ -30,19 +32,19 @@ public class CocheCombustible extends Vehiculo{
 		this.consumo = consumo;
 	}
 
-	public double getPotencia() {
+	public int getPotencia() {
 		return potencia;
 	}
 
-	public void setPotencia(double potencia) {
+	public void setPotencia(int potencia) {
 		this.potencia = potencia;
 	}
 
-	public String getNivelEmision() {
+	public NivelEmision getNivelEmision() {
 		return nivelEmision;
 	}
 
-	public void setNivelEmision(String nivelEmision) {
+	public void setNivelEmision(NivelEmision nivelEmision) {
 		this.nivelEmision = nivelEmision;
 	}
 	

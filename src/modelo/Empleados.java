@@ -61,6 +61,15 @@ public class Empleados {
 	public void setOficinaDeTrabajo(Oficina oficinaDeTrabajo) {
 		this.oficinaDeTrabajo = oficinaDeTrabajo;
 	}
+//metodos
+
+	public void entregarCoche(){
+
+	}
+
+	public void recogerCoche(){
+		
+	}
 
 	
 	

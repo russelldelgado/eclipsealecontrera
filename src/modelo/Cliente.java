@@ -2,6 +2,9 @@ package modelo;
 
 import java.util.ArrayList;
 
+import modelo.TiposEnum.CarneCoche;
+import modelo.TiposEnum.CarneMoto;
+
 public class Cliente {
 	String dni;
 	String nombre;
